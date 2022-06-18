@@ -4,7 +4,7 @@ import json
 
 
 app = Flask(__name__)
-auth_token = "0ad359081ec6cced83ddfad9626d7ffd35c827b"
+auth_token = "0ad359081ec6cced83ddfad9626d7ffd35c827ba"
 
 
 @app.route("/api_call/<path:long_url>", methods=["GET"])
