@@ -27,3 +27,11 @@ json file in a Mockserver folder is storing the details. while the json file whi
 
 requirements.txt:
 this file contains the required libraries for the running app in the docker.
+
+to run the unittest in docker use below command from infra-cloud directory:
+docker-compose up
+
+to run the flask server in docker use below commands from infra-cloud directory.
+1. docker image build -t flask_docker .
+2. docker run -p 5000:5000 -d flask_docker
+then use docker terminal to intract with app using docker desktop.
