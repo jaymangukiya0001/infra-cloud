@@ -8,8 +8,9 @@ this assignment has mainly two parts.
 2. Python file
 
 1. Flask Server 
-Flask server is used to call the api of bitly to short the url. The code related to this file is in the Mockserver folder it has api_call endpoint that will be called for shorten the URL. it only accepts the GET request only and path as a argument.
+Flask server is used to short the url. The code related to this file is in the Mockserver folder it has api_call endpoint that will be called for shorten the URL. it only accepts the GET request only and path as a argument.
 it also contains checkpoint that the url which we pass as an argument is we have already done request or not? if we have done than it will check in the json file if it is present than it will return shorten url which is in the json file. else it will call the bitly api. if something goes wrong than it will return error string containing json obj.
+to redirect to original url we have enpoint /<short_id> which will redirect to long url.
 
 2. Python file.
 mock_server_call python file is used to call the server which is created earlier using flask. it is mainly used to take input of url and taking the response from the flask server.
