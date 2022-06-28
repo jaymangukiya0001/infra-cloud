@@ -5,6 +5,5 @@ WORKDIR /"infra-cloud"
 ADD . /"infra-cloud"
 # running reuirements.txt
 RUN pip3 install -r requirements.txt
- 
 ENTRYPOINT [ "python" ]
 CMD ["Mockserver/api_call.py"]
