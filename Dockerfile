@@ -1,8 +1,7 @@
-FROM python:3.8-alpine
+FROM python:3.8
 # setting working dir
 WORKDIR /"infra-cloud"
-# adding contents to container
-ADD . /"infra-cloud"
+COPY . .
 # running reuirements.txt
 RUN pip3 install -r requirements.txt
 ENTRYPOINT [ "python" ]
